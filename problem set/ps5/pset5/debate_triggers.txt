@@ -1,0 +1,40 @@
+
+
+// title trigger named t1
+
+t1,TITLE,debate
+
+// description trigger named t2
+
+t2,DESCRIPTION,presidential
+
+// description trigger named t3
+
+t3,DESCRIPTION,Clinton
+
+
+
+// after trigger named t4
+
+t4,AFTER,19 Oct 2016 18:00:00
+
+// after trigger named t5
+
+t5,BEFORE,20 Oct 2016 1:30:00
+
+// composite trigger named t6
+t6,AND,t2,t3
+
+
+
+// composite trigger named t7
+t7,AND,t5,t4
+
+
+
+// composite trigger named t8
+t8,AND,t1,t7
+
+
+// the trigger list contains t6 and t8
+ADD,t6,t8
